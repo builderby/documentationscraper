@@ -24,12 +24,9 @@ export async function parallelScrape(urls: string[]): Promise<void> {
     const browser = await puppeteer.launch(launchOptions);
     console.log('Browser launched successfully');
 
-    const page = await browser.newPage();
-    console.log('New page created');
-
     for (const url of urls) {
       if (await checkRobotsTxt(url)) {
-        await scrapeDocumentation(url, page);
+        await scrapeDocumentation(url, browser);
       } else {
         console.log(`Skipping ${url} due to robots.txt restrictions`);
       }
