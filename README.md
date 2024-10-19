@@ -18,7 +18,7 @@ An advanced web scraping application for documentation websites, built with Type
 
 ## Overview
 
-The Documentation Scraper is designed to crawl documentation websites and extract content into a single consolidated Markdown file. This tool is especially useful for creating local copies of documentation for offline access or for processing with language models (LLMs).
+The Documentation Scraper is designed to crawl documentation websites and extract content into a single consolidated Markdown file. This tool is especially useful for creating local copies of documentation for offline access or for processing with Large Language Models (LLMs) and AI Agents.
 
 ## Features
 
@@ -32,6 +32,11 @@ The Documentation Scraper is designed to crawl documentation websites and extrac
   - Lists
 - Uses realistic user agents to avoid detection
 - Implements rate limiting and politeness delays to respect server resources
+- Recursively crawls linked pages to gather all relevant content
+- Adheres to the website's `robots.txt` file
+- Handles authentication and authorization
+- Customizable content extraction and output file structure
+- Outputs content into a structured, organized folder and file system
 
 ## Prerequisites
 

@@ -29,7 +29,7 @@ async function main(startUrl: string) {
 
 // Set the starting URL for the scraper
 // TODO: Replace this with the actual documentation site URL you want to scrape
-const startUrl = 'https://dydxprotocol.github.io/v3-teacher/';
+const startUrl = 'https://example.com/docs';
 
 // Run the main function and catch any unhandled errors
 main(startUrl).catch(console.error);
